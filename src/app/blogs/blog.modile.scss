@@ -1,0 +1,34 @@
+@import '../base.scss';
+@import "../globals.scss";
+
+
+.blogs_page {
+    padding: 2rem;
+    text-align: center;
+    background-color: $theme-black-color; // Use theme color instead of #ff0000
+
+    .page_title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: $white-color; // Change to white to match the theme
+    }
+    .hero_banner {
+        margin-bottom: 3rem; // Add margin to create space below the "Our Blogs" section
+      }
+
+    .blogs_list {
+        
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); // Adjust based on desired number of columns
+        gap: 30px; // Spacing between grid items
+    }
+    .blog_card {
+        border: 2px solid red !important; // Red border for the card
+        border-radius: 8px; // Optional: Rounded corners
+        padding: 1rem; // Space inside the border
+        background-color: $white-color; // Ensure contrast
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Optional: Add a slight shadow
+      }
+      
+    
+}

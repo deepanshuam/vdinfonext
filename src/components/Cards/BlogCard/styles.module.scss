@@ -1,0 +1,89 @@
+@import '../../../app/base.scss';
+
+
+.bolgbox {
+    
+    padding: 0; /* Remove padding to avoid space inside the border */
+  
+  border-radius: 8px;
+    border: 2px solid red;
+    overflow: hidden;
+  box-sizing: border-box;
+  height: 350px; /* Set fixed height for the card */
+  
+  display: flex;
+  flex-direction: column;
+    .blogimg {
+        
+    
+        
+        
+        position: relative;
+    width: 100%; /* Ensure image container takes full width */
+    height: 210px; /* Adjust height as needed */
+    overflow: hidden;
+    }
+    .blogimg img {
+        width: 100%; /* Ensure the image stretches to fill the container */
+        height: 100%; /* Ensure the image height is fully contained */
+        object-fit: cover;
+         /* This will ensure the image covers the entire area without distortion */
+      }
+    &:hover{
+        img{
+            transform: scale(1.1);
+            transition: .5s ease-in-out;
+        }
+    }
+    .btxt {
+        position: absolute;
+        background: #fff;
+        width: 190px;
+        bottom: 0;
+        padding: 10px;
+        display: flex;
+    }
+
+    .vdic {
+        width: 35px;
+        height: 35px;
+        border-radius: 50px;
+        overflow: hidden;
+        margin-right: 10px;
+    }
+
+    .stxt{
+        .ft{
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #191919;
+            font-family: $font-poppins;
+            font-weight: 600;
+        }
+        .st{
+            font-size: 11px; 
+            font-weight: 500;
+            color: #191919;
+        }
+    }
+
+    .blogtxt {
+        padding: 16px; /* Add padding around the text */
+        
+        h4 {
+          margin: 0; /* Remove default margin */
+          font-size: 1.25rem;
+          font-weight: 700;
+          color: #fff;
+          margin-bottom: 0.5rem;
+        }
+    
+        p {
+          font-size: 1rem;
+          color: #fff;
+          font-weight: 500;
+          line-height: 1.5;
+        }
+      }
+    
+}

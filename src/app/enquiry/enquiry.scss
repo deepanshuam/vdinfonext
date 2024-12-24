@@ -1,0 +1,30 @@
+@import "../base.scss";
+@import "../globals.scss";
+.enquiry_page {
+  padding: 0;  // Remove padding to ensure full-width
+  margin: 0;   // Remove any default margin to avoid space between the edge of the screen and content
+  background-color: $theme-black-color;  // Use theme black color for the entire page
+  width: 100vw; // Ensure the page takes full width
+
+  .hero_banner {
+    width: 100%;  // Make the banner stretch full-width
+    margin-bottom: 3rem;
+    color: $white-color; // Ensure the text color is white for contrast
+    padding: 2rem;
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+  }
+
+  .form_container {
+    width: 100%;  // Make the form container take full width
+    max-width: 100%;  // Ensure no maximum width constraint
+    padding: 2rem;
+    background-color: $theme-black-color; // Use theme black color for the
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Optional shadow for the form container
+    margin: 0 auto; // Center the form in the page
+  }
+}
