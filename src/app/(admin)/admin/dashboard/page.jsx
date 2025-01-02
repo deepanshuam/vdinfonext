@@ -12,7 +12,7 @@ import { mutate } from "swr";
 import { MdModeEdit, MdDelete } from "react-icons/md";
 import { FaPlus } from "react-icons/fa";
 
-
+import Image from 'next/image';
 
 
 
@@ -68,7 +68,7 @@ const Dashboard = () => {
           headerName: 'Image',
           width: 150,
           renderCell: (values => (
-              <img style={{ width: '80px', }} src={values.row.url} alt="" />
+              <Image style={{ width: '80px', }} src={values.row.url} alt="" />
           ))
       },
       {

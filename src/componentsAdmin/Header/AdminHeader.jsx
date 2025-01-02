@@ -3,13 +3,14 @@
 import React from 'react';
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import styles from './styles.module.scss';
+import Image from 'next/image';
 
 const AdminHeader = () => {
   return (
     <Navbar expand="lg" className={`py-3 ${styles.admin_nav}`}>
       <Container>
         <Navbar.Brand href="/admin">
-          <img
+          <Image
             src="/images/logo/logo-white.png"
             width="150"
             className="d-inline-block align-top"

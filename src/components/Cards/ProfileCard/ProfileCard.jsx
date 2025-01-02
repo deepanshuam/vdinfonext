@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './styles.module.scss'
-
+import Image from 'next/image';
 import { PiDotsThreeOutlineFill, PiExport } from "react-icons/pi";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaFacebookF, FaTwitter } from 'react-icons/fa';
@@ -11,7 +11,7 @@ export default function ProfileCard() {
   return (
     <div className={styles.profile}>
       <div className={styles.profile_image}>
-        <img src="/images/ad.jpg" />
+        <Image src="/images/ad.jpg" alt=''/>
       </div>
       <h2 className={styles.profile_username}>Harsh</h2>
       <small className={styles.profile_user_handle}>designer</small>

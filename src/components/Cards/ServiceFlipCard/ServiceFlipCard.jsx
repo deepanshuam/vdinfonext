@@ -1,12 +1,12 @@
 import React from "react";
 import styles from "./styles.module.scss";
-
+import Image from 'next/image';
 export default function ServiceFlipCard({serviceTitle, serviceContent, image}) {
   return (
     <div className={styles.d_card}>
         <div className={`position-relative ${styles.face} ${styles.front}`}>
           <div className={styles.card_image}>
-            <img src={image} alt='' />
+            <Image src={image} alt='' />
           </div>
           <p className={`text-center ${styles.user_profession}`}>
             {serviceTitle}

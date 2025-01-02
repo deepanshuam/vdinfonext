@@ -118,7 +118,7 @@ const ContactUs = () => {
         color="text.secondary"
         sx={{ mb: 6 }}
       >
-        We're here to help! Fill out the form below and we'll get back to you as soon as possible.
+        We are here to help! Fill out the form below and we will get back to you as soon as possible.
       </Typography>
   
       <Grid container spacing={4}>
@@ -239,7 +239,7 @@ const ContactUs = () => {
               </Box>
               <Box sx={{ display: "flex", alignItems: "center", mb: 3 }}>
                 <FaPhone size={24} style={StyledIcon} />
-                <Typography sx={{ ml: 2 }}>+1 (555) 123-4567</Typography>
+                <Typography sx={{ ml: 2 }}>+1 (555) 123&#39;4567</Typography>
               </Box>
               <Box sx={{ display: "flex", alignItems: "center" }}>
                 <FaEnvelope size={24} style={StyledIcon} />

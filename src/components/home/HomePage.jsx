@@ -57,9 +57,9 @@ export default function HomePage() {
         <ToolsWeUse data={toolsweuse}/>
         <OurPartners />
         <ClientReview />
-        <Reviews />
+        {/* <Reviews /> */}
         <FaqSection />
-        <Team />
+        {/* <Team /> */}
         {/* {
           blogs?.posts.length > 0 ?
             <HomeBlogs post ={blogs}/>

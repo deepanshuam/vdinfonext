@@ -10,7 +10,7 @@ import
     FaUser, 
     FaPhoneAlt, 
     FaCalculator, 
-    FaWrench,
+    FaRegNewspaper,
     FaFacebookF,
     FaLinkedinIn,
     FaInstagram,
@@ -30,11 +30,11 @@ export default function Top() {
             <ul className={styles.top__contact}>
                 <li>
                     <FaEnvelope />
-                    <span>info@vdinfotech.com</span>
+                    <span>support@vdinfotech.com</span>
                 </li>
                 <li>
                     <FaPhoneAlt />
-                    <span>9988993645</span>
+                    <span>920-573-1999</span>
                 </li>
             </ul>
             <ul className={styles.top__list}>
@@ -95,6 +95,11 @@ const links = [
         {
             name: "Website Calculator",
             icon: FaCalculator,
+            link: "/website-calculator",
+        },
+        {
+            name: "News",
+            icon: FaRegNewspaper ,
             link: "/website-calculator",
         },
         

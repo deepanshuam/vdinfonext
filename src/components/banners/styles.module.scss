@@ -1,13 +1,28 @@
-.service_banner{
+.service_banner {
+    height: 300px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    z-index: 1;
-    // background-color: red;
-    background-image: url(/images/banners/bnr-4.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    // background-size: contain;
-
-    &__container{
-        min-height: 300px;
+  
+    &__container {
+      position: relative;
+      z-index: 2;
+      text-align: center;
     }
-}
+  
+    .text_overlay {
+      background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      display: inline-block;
+  
+      h1 {
+        color: #fff;
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 0;
+      }
+    }
+  }
+  

@@ -26,7 +26,8 @@
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "**/*.jsx" // Add this line to explicitly include .jsx files
   ],
   "exclude": [
     "node_modules"

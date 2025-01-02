@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import styles from './styles.module.scss'
 import Slider from 'react-slick';
+import Image from 'next/image';
 
 
 export default function ToolsWeUse({data}) {
@@ -61,7 +62,7 @@ export default function ToolsWeUse({data}) {
                             {data.images && data.images.map((image, index)=>(
                                 <div key={index} className={styles.slide_item}>
                                     <li className='d-flex justify-content-center align-items-center'>
-                                        <img src={image.imageSrc} alt={image.alt} className={styles.certificationLogo} />    
+                                        <Image src={image.imageSrc} alt={image.alt} className={styles.certificationLogo} />    
                                     </li>
                                 </div>
                             ))}

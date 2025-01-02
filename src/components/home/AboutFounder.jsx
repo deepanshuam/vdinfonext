@@ -1,6 +1,8 @@
 import React from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap'
 import styles from './styles.module.scss'
+import Image from 'next/image';
+
 export default function AboutFounder() {
   return (
     <section className={styles.about_founder}>
@@ -8,7 +10,7 @@ export default function AboutFounder() {
             <Row style={{border:"1px solid white",}}>
                 <Col className={styles.about_founder__content} md={8}>
                     <h2>
-                        SEO Agency India’s #1 Digital Marketing Strategist Teaches The Secrets of How You Can Transform Your
+                        SEO Agency India #1 Digital Marketing Strategist Teaches The Secrets of How You Can Transform Your
                     </h2>
                     <div className={styles.titles}>
                         <ul>
@@ -27,13 +29,13 @@ export default function AboutFounder() {
                             Transform Your Business into A Brand with 10x Growth
                         </h4>
                         <h3>
-                            Meet Vishal Dagar (Founder & CEO of VD INFOTECH) Online
+                            Meet Vishal Dagar (Founder &amp; CEO of VD INFOTECH) Online
                         </h3>
                     </div>
                     
                     <div className={styles.aboutceo}>
                         <h4>
-                            What other SEO companies don't tell you | SEO Industry Exposed by VD
+                            What other SEO companies don&apos;t tell you | SEO Industry Exposed by VD
                         </h4>
                     </div>
                     
@@ -54,9 +56,8 @@ export default function AboutFounder() {
                 </Col>
 
                 <Col md={4} className={styles.about_founder__image}>
-                
                     {/* <div className='d-flex justify-content-end'>
-                        <img height={400} src="/images/vishal-sir-pic.png" />
+                        <Image height={400} src="/images/vishal-sir-pic.png" />
                     </div> */}
                 </Col>
             </Row>

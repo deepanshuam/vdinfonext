@@ -15,7 +15,7 @@ import
     FaEnvelope,
     FaWhatsapp
 } from "react-icons/fa";
-
+import Image from 'next/image';
 // styles
 import styles from "./styles.module.scss"
 import React from "react";
@@ -28,7 +28,7 @@ export default function Links() {
                 <ul key={link.heading}>
                     {
                         i === 0 ? (
-                            <img src="/images/logo/logo-light.png" alt="" />
+                            <Image src="/images/logo/logo-light.png" alt="" />
                         ) :(
                             <b>{link.heading}</b>
                         )
@@ -53,17 +53,17 @@ const links = [
         heading: "VD INFOTECH",
         links: [
             {
-                name: "+91-9988993645",
+                name: "+91-9205731999",
                 link: "",
                 icon: FaPhoneAlt
             },
             {
-                name: "info@vdinfotech.com",
+                name: "support@vdinfotech.in",
                 link: "",
                 icon: FaEnvelope
             },
             {
-                name: "+91-9988993645",
+                name: "+91-9205731999",
                 link: "",
                 icon: FaWhatsapp
             },

@@ -1,0 +1,80 @@
+@import '../../app/base.scss';
+
+.footer {
+  color: #fff;
+  padding: 2rem 0;
+
+  /* Footer Image */
+  .footer_image {
+    text-align: center;
+    margin-bottom: 1.5rem;
+
+    .footer_img {
+      width: 100%;
+      max-width: 1200px; /* Optional: adjust the size */
+      height: auto;
+    }
+  }
+
+  .footer_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .footer_section {
+    margin-bottom: 1.5rem;
+
+    .footer_title {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      color: #f5ba13;
+    }
+
+    .footer_text {
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    .footer_links {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 0.5rem;
+
+        .footer_link {
+          color: #f5ba13;
+          text-decoration: none;
+          font-size: 0.9rem;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .footer_social {
+      display: flex;
+      gap: 0.5rem;
+
+      .footer_icon {
+        color: #f5ba13;
+        font-size: 1.5rem;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #ffa726;
+        }
+      }
+    }
+  }
+
+  .footer_bottom {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #aaa;
+  }
+}

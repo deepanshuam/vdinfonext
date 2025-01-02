@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import BootStrapModal from "../../Modal";
-
+import Image from 'next/image';
 export default function FlipCard() {
   return (
     <div className={styles.card_item}>
       <div className={`${styles.eff} ${styles.front}`}>
         <div className={styles.client_image}>
-          <img src='/images/ad.jpg' alt='' />
+          <Image src='/images/ad.jpg' alt='' />
         </div>
         <h5 className={`text-center ${styles.user_name}`}>Ayush Dabas</h5>
         <p className={`text-center ${styles.user_profession}`}>
@@ -18,7 +18,7 @@ export default function FlipCard() {
 
       <div className={`${styles.eff} ${styles.back}`}>
         <div>
-          <img src='/images/logo/logo-dark.png' alt='' />
+          <Image src='/images/logo/logo-dark.png' alt='' />
         </div>
         <div className='d-flex justify-content-between'>
           <div className=''>
@@ -26,7 +26,7 @@ export default function FlipCard() {
             <p className={styles.user_profession}>(Software Developer)</p>
           </div>
           <div className={styles.client_back_image}>
-            <img src='/images/ad.jpg' alt='' />
+            <Image src='/images/ad.jpg' alt='' />
           </div>
         </div>
         <div className='d-flex justify-content-center'>

@@ -1,0 +1,26 @@
+@import "../base.scss";
+@import "../globals.scss";
+.industry-section {
+  padding: 2rem;
+}
+
+.industry-card {
+  background: #ff4d4d; /* Red background */
+  color: #000; /* Black text color */
+  border: none; /* Remove default border */
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhance hover effect */
+  }
+}
+
+.industry-card h6 {
+  margin: 0;
+  font-weight: bold; /* Make the text bold */
+}

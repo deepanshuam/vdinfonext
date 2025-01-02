@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 import styles from './styles.module.scss';
+import Image from 'next/image';
 
 export default function WeBuild() {
   return (
@@ -48,7 +49,7 @@ export default function WeBuild() {
                         </div>
                         <div className={`d-flex align-items-center`}> 
                             <div>
-                                <img width={200} src="/images/logo/logo-light.png" alt="" />
+                                <Image width={200} src="/images/logo/logo-light.png" alt="" />
                             </div>
                         </div>
                         <div className={styles.card}>

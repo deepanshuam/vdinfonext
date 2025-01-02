@@ -2,7 +2,7 @@
 import { Navbar, Nav, NavDropdown, Button, Container } from 'react-bootstrap';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation'; // Move useRouter inside the component
-
+import Image from 'next/image';
 import styles from './styles.module.scss';
 
 const Mobile = () => {
@@ -26,7 +26,7 @@ const Mobile = () => {
           <Container>
             {/* Logo on the left side */}
             <Navbar.Brand href="/">
-              <img
+              <Image
                 src="/images/logo/logo-light.png"
                 width="190"
                 className="d-inline-block align-top"

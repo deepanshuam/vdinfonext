@@ -2,7 +2,7 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import Slider from 'react-slick';
 import styles from './styles.module.scss'
-
+import Image from 'next/image';
 export default function CertifiedDigitalMarketing() {
 
     var settings = {
@@ -58,30 +58,30 @@ export default function CertifiedDigitalMarketing() {
                     </p>
                 </div>
                 <div className={styles.digital_marketing__certifications}>
-                    <Slider {...settings} className={` ${styles.certificate_img}`}>
+                    <Slider {...settings} className={` ${styles.certificate_Image}`}>
                         <div className={styles.slide_item}>
                             <li className='d-flex justify-content-center align-items-center'>
-                                <img src="/images/certifications/yt.png" alt="YouTube Certified" className={styles.certificationLogo} />    
+                                <Image src="/images/New/yt.png" alt="YouTube Certified" className={styles.certificationLogo} />    
                             </li>
                         </div>
                         <div className={styles.slide_item}>
                             <li className='d-flex justify-content-center align-items-center'>
-                                <img src="/images/certifications/facebook.png" alt="Bing Certified" className={styles.certificationLogo} />
+                                <Image src="/images/New/bing.png" alt="Bing Certified" className={styles.certificationLogo} />
                             </li>
                         </div>
                         <div className={styles.slide_item}>
                             <li className='d-flex justify-content-center align-items-center'>
-                                <img src="/images/certifications/bing.png" alt="Google AdWords Certified" className={styles.certificationLogo} />
+                                <Image src="/images/New/google.png" alt="Google AdWords Certified" className={styles.certificationLogo} />
                             </li>
                         </div>
                         <div className={styles.slide_item}>
                             <li className='d-flex justify-content-center align-items-center'>
-                                <img src="/images/certifications/google.ad.png" alt="Google Analytics Certified" className={styles.certificationLogo} />
+                                <Image src="/images/New/ga.png" alt="Google Analytics Certified" className={styles.certificationLogo} />
                             </li>
                         </div>
                         <div className={styles.slide_item}>
                             <li className='d-flex justify-content-center align-items-center'>
-                                <img src="/images/certifications/google-analytics.png" alt="Google Analytics Certified" className={styles.certificationLogo} />
+                                <Image src="/images/New/pr.png" alt="Google Analytics Certified" className={styles.certificationLogo} />
                             </li>
                         </div>
                     </Slider>
