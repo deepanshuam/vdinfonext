@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Calculator.scss";
+import "./calculator.scss";
 
 const CalculatorForm = () => {
   const [cart, setCart] = useState([]);
